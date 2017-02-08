@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EKS/dev</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="styleSheet" href="main.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/w3-theme-dark-grey.css">
+</head>
+    <body>
+    
+<ul class="w3-navbar w3-blue">
+  <li><a href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-th" aria-hidden="true"></i></a></li>
+</ul>
+
+<nav class="w3-dropnav w3-card-2" style="display:none" id="myDropnav">
+  <div>
+      <div class="w3-center">
+      <ul class="w3-ul">
+          <a href="#" class="w3-grey w3-hover-indigo"><b>The Team</b></a>
+          <a href="#" class="w3-grey w3-hover-blue"><b>Items Chart</b></a>
+          <a href="#" class="w3-grey w3-hover-light-blue"><b>3D Models</b></a>
+              <a href="#" class="w3-grey w3-hover-cyan"><b>RoadMap</b></a>
+              <a href="#" class="w3-grey w3-hover-aqua"><b>DevBlog</b></a>
+              <a href="#" class="w3-grey w3-hover-teal"><b>Gallery</b></a>
+              <a href="#" class="w3-grey w3-hover-green"><b>About</b></a>
+      </ul>
+      </div >
+  </div>
+</nav>
+
+<div class="w3-container w3-center">
+ <img id="logoMainRing" src="srcImages/RingEKS2_vector.png" class="w3-center">
+ <img id="logoMain" src="srcImages/logoEKSmini_vector.png" class="w3-center">
+        </div>
+
+<script>
+var x = document.getElementById("myDropnav");
+function w3_open() {
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+function w3_close() {
+    x.className = x.className.replace(" w3-show", "");
+}
+</script>
+
+    </body>
